@@ -24,13 +24,22 @@ while True:
     elif sign ==3:
         print(x,"x", y ,"=", x*y)
     elif sign ==4:
-        print(x,"/", y ,"=", x/y)
+        if y!=0:
+            print(x,"/", y ,"=", x/y)
+        else:
+            print("Error: Cannot divide by zero!")
     elif sign ==5:
-        print(x,"of", y, "remainder is =", x%y)
+        if y!=0:
+            print(x, "of", y, "remainder is =", x%y)
+        else:
+            print("Error: Cannot find remainder when dividing by zero!")
     elif sign ==6:
         print(x,"^", y ,"=", x**y)
     elif sign ==7:
-        print(x,"//", y ,"=", x//y)
+        if y!=0:
+            print(x, "//", y, "=", x//y)
+        else:
+           print("Error: Cannot calculate floor quotient with zero!") 
     else:
         print("Invalid Parameter")
 
@@ -38,4 +47,5 @@ while True:
 
     if again == "no":
         print("THANK YOU!")
+
         break
