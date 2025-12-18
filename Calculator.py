@@ -39,7 +39,7 @@ while True:
         if y!=0:
             print(x, "//", y, "=", x//y)
         else:
-           print("Error: Cannot calculate floor quotient with zero!") 
+            print("Error: Cannot calculate floor quotient with zero!") 
     else:
         print("Invalid Parameter")
 
@@ -49,3 +49,4 @@ while True:
         print("THANK YOU!")
 
         break
+
